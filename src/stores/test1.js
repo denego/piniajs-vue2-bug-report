@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia';
+import { ref, computed } from 'vue';
 
-export const useTest1 = defineStore('test1', {
-  state: () => ({
-    number1: 10,
-  }),
-  getters: {
-    number1Getter: (state) => state.number1,
-  },
-  actions: {
-    updateTest1() { this.number1 += 1; },
-  },
+export const useTest1 = defineStore('test1', () => {
+  const number1 = ref(10);
+  const number1Getter = computed(() => number1.value);
+
+  function updateTest1() {
+    number1.value += 1;
+  }
+
+  return { number1, number1Getter, updateTest1 };
 });
