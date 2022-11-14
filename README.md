@@ -1,5 +1,11 @@
 # piniajs-vue2-bug-report
 
+## Workaround
+
+Use composition api to define stores. It works with Vue 2.
+
+[Fixed store](https://github.com/denego/piniajs-vue2-bug-report/blob/workaround/src/stores/test1.js)
+
 ## Bug description
 
 ### Project description
