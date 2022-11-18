@@ -1,10 +1,7 @@
 <template>
-  <div>
+  <div class="TestView2">
     <div>
-      <router-link :to="{ name: 'test1' }">test 1</router-link>
-    </div>
-    <div>
-      <router-link :to="{ name: 'test2' }">test 2</router-link>
+      <router-link :to="{ name: 'test1' }">Click to test</router-link>
     </div>
     <TestCmp />
   </div>
